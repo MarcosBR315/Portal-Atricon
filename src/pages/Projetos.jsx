@@ -5,7 +5,7 @@ export default function Projetos() {
     <>
       <S.Header>
         <h1>Projetos Atricon</h1>
-<S.ButtonLink to="/">Voltar</S.ButtonLink>
+        <S.ButtonLink to="/">Voltar</S.ButtonLink>
       </S.Header>
       <S.Main>
         <a

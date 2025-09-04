@@ -8,7 +8,7 @@ import * as S from "./components/StyledComponents";
 function App() {
   return (
     <>
-      <S.GlobalStyle />
+      <S.GlobalStyle /> {/* Estilos globais aplicados */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/site-oficial" element={<SiteOficial />} />
