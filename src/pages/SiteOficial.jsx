@@ -1,11 +1,9 @@
 import * as S from "../components/StyledComponents";
-import LogoHorizontal from "../components/images/logoBrancaHorizontal.png";
 
 export default function SiteOficial() {
   return (
     <>
       <S.Header>
-        <img className="logoHorizontal" src={LogoHorizontal} />
         <h1>Portal Atricon</h1>
       </S.Header>
       <S.Main>
