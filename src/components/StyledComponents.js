@@ -1,66 +1,6 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import { Link } from "react-router-dom";
 
-/* Header */
-export const Header = styled.header`
-  width: 100%;
-  padding: 20px;
-  background-color: blue;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-
-  h1 {
-    color: white;
-  }
-`;
-
-export const Main = styled.main`
-  width: 100%;
-  padding: 50px;
-  background-color: lightblue;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  a {
-    border: 2px solid black;
-    border-radius: 5px;
-    margin-top: 20px;
-    padding: 5px;
-    width: fit-content;
-    background: white;
-    color: #4f46e5;
-    text-decoration: none;
-    font-weight: bold;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-`;
-
-export const ButtonLink = styled(Link)`
-    border: 2px solid black;
-    border-radius: 5px;
-    margin-top: 20px;
-    padding: 5px;
-    width: fit-content;
-    background: white;
-    color: #4f46e5;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-
-  &:hover {
-    text-decoration: underline;
-  }
-`;
-
-/* GlobalStyle */
-import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -72,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
+    line-height: 1.5;
   }
 
   h1, h2, h3 {
@@ -82,5 +23,146 @@ export const GlobalStyle = createGlobalStyle`
   a {
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
+  }
+`;
+
+export const Header = styled.header`
+  width: 100%;
+  height: 120px;
+  padding: 0 20px;
+  background-color: #2FA3D9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  h1 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logoHorizontal {
+    height: 80px;
+    object-fit: contain;
+    position: absolute;
+    left: 20px;
+  }
+
+  @media (max-width: 768px) {
+    height: 100px;
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .logoHorizontal {
+      height: 60px;
+      left: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    height: 80px;
+
+    h1 {
+      font-size: 20px;
+    }
+
+    .logoHorizontal {
+      height: 50px;
+      left: 5px;
+    }
+  }
+`;
+
+export const Main = styled.main`
+  width: 100%;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  background-color: #f9f9f9;
+
+  .buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  a {
+    border-radius: 8px;
+    padding: 14px 35px;
+    width: fit-content;
+    background-color: #4f46e5;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+    &:hover {
+      background-color: #3730a3;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 15px;
+
+    a {
+      font-size: 1rem;
+      padding: 12px 30px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 30px 10px;
+
+    a {
+      font-size: 0.9rem;
+      padding: 10px 25px;
+    }
+  }
+`;
+
+export const ButtonLink = styled(Link)`
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 14px 35px;
+  width: fit-content;
+  background-color: #4f46e5;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+  &:hover {
+    background-color: #3730a3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    padding: 12px 30px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+    padding: 10px 25px;
   }
 `;
