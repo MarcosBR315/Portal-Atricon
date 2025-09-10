@@ -34,7 +34,7 @@ export const Header = styled.header`
   background-color: #2FA3D9;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; /* desktop: título central */
   position: relative;
 
   h1 {
@@ -44,6 +44,7 @@ export const Header = styled.header`
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    margin: 0;
   }
 
   .logoHorizontal {
@@ -56,29 +57,45 @@ export const Header = styled.header`
   @media (max-width: 768px) {
     height: 100px;
 
+    h1 { font-size: 24px; }
+    .logoHorizontal { height: 60px; left: 10px; }
+  }
+
+  /* CORREÇÃO: max-width 600px (antes estava 'mix-width') */
+  @media (max-width: 600px) {
+    /* faz os elementos participarem do flexbox para que fiquem nas extremidades */
+    justify-content: space-between;
+    padding: 0 12px;
+
     h1 {
-      font-size: 24px;
+      /* tira o posicionamento absoluto e remove o transform/left */
+      position: static; /* participa do fluxo/flex */
+      left: auto;
+      transform: none;
+      text-align: left; /* ou right, conforme desejado */
+      margin: 0;
+      font-size: 22px;
+      /* se quiser forçar o título à direita, use margin-left: auto; */
+      /* margin-left: auto; */
     }
 
     .logoHorizontal {
+      position: static; /* participa do fluxo/flex */
       height: 60px;
-      left: 10px;
+      /* se precisar garantir que fique sempre à esquerda:
+         order: -1;
+      */
     }
   }
 
   @media (max-width: 480px) {
     height: 80px;
 
-    h1 {
-      font-size: 20px;
-    }
-
-    .logoHorizontal {
-      height: 50px;
-      left: 5px;
-    }
+    h1 { font-size: 20px; }
+    .logoHorizontal { height: 50px; left: 5px; }
   }
 `;
+
 
 export const Main = styled.main`
   width: 100%;
