@@ -11,8 +11,8 @@ export default function Home() {
       <S.Main>
         <div className="buttonsContainer">
           <S.ButtonLink to="/site-oficial">Site Oficial</S.ButtonLink>
-          <S.ButtonLink to="/projetos">Projetos</S.ButtonLink>
           <S.ButtonLink to="/eventos">Eventos</S.ButtonLink>
+          <S.ButtonLink to="/projetos">Projetos</S.ButtonLink>
         </div>
       </S.Main>
     </>

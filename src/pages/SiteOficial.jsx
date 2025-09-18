@@ -1,11 +1,12 @@
 import * as S from "../components/StyledComponents";
-import LogoSimples from "../components/images/logoBrancaHorizontal.png";
+import LogoBrancaHorizontal from "../components/images/logoBrancaHorizontal.png";
+import LogoReduzida from "../components/images/LogoReduzida.png";
 
 export default function SiteOficial() {
   return (
     <>
       <S.Header>
-        <img className="logoHorizontal" src={LogoSimples} />
+        <img className="logoHorizontal" src={LogoBrancaHorizontal} />
         <h1>Portal Atricon</h1>
       </S.Header>
       <S.Main>
@@ -15,8 +16,7 @@ export default function SiteOficial() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={LogoHorizontal}/>
-            <p>Ir para o site oficial</p>
+            <img src={LogoReduzida}/>
           </S.A>
           <S.ButtonLink to="/">Voltar</S.ButtonLink>
         </div>

@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: white; /*branco alternativo: #f9f9f9*/
     color: #333;
     line-height: 1.5;
   }
@@ -34,7 +34,7 @@ export const Header = styled.header`
   background-color: #2fa3d9;
   display: flex;
   align-items: center;
-  justify-content: center; /* desktop: título central */
+  justify-content: center;
   position: relative;
 
   h1 {
@@ -66,22 +66,17 @@ export const Header = styled.header`
     }
   }
 
-  /* CORREÇÃO: max-width 600px (antes estava 'mix-width') */
   @media (max-width: 600px) {
-    /* faz os elementos participarem do flexbox para que fiquem nas extremidades */
     justify-content: space-between;
     padding: 0 12px;
 
     h1 {
-      /* tira o posicionamento absoluto e remove o transform/left */
-      position: static; /* participa do fluxo/flex */
+      position: static;
       left: auto;
       transform: none;
-      text-align: left; /* ou right, conforme desejado */
+      text-align: left;
       margin: 0;
       font-size: 22px;
-      /* se quiser forçar o título à direita, use margin-left: auto; */
-      /* margin-left: auto; */
     }
 
     .logoHorizontal {
@@ -115,7 +110,7 @@ export const Main = styled.main`
   justify-content: center;
   text-align: center;
   position: relative;
-  background-color: #f9f9f9;
+  background-color: white;
 
   .buttonsContainer {
     display: flex;
@@ -123,8 +118,7 @@ export const Main = styled.main`
     align-items: center;
     gap: 20px;
   }
-}
-  }
+  
 
   @media (max-width: 768px) {
     padding: 40px 15px;
@@ -142,20 +136,27 @@ export const Main = styled.main`
       font-size: 0.9rem;
       padding: 10px 25px;
     }
-  }
 `;
 
 export const A = styled.a`
   background: none;
   align-items: center;
   display: flex;
+  justify-content: space-between;
   border: 2px solid;
   border-radius: 8px;
+  padding: 10px;
 
   img {
-  width: 100px;
+    width: 150px;
+    margin: 10px;
   }
-`
+
+  &:hover {
+    background: #f1f1f1;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+`;
 
 export const ButtonLink = styled(Link)`
   border-radius: 8px;

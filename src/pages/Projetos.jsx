@@ -1,20 +1,31 @@
 import * as S from "../components/StyledComponents";
+import LogoBrancaHorizontal from "../components/images/logoBrancaHorizontal.png";
+import imgRdT from "../components/images/LogoRdT.png";
+import imgLabtcs from "../components/images/LogoLabtcs.png";
 
 export default function Projetos() {
   return (
     <>
       <S.Header>
-        <h1>Projetos Atricon</h1>
+        <img className="logoHorizontal" src={LogoBrancaHorizontal} />
+        <h1>Portal Atricon</h1>
       </S.Header>
       <S.Main>
         <div className="buttonsContainer">
-          <a
+          <S.A
             href="https://radardatransparencia.atricon.org.br/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Radar da Transparência
-          </a>
+            <img src={imgRdT} />
+          </S.A>
+          <S.A
+            href="https://radardatransparencia.atricon.org.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={imgLabtcs} />
+          </S.A>
           <S.ButtonLink to="/">Voltar</S.ButtonLink>
         </div>
       </S.Main>
