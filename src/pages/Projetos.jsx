@@ -20,7 +20,7 @@ export default function Projetos() {
             <img src={imgRdT} />
           </S.A>
           <S.A
-            href="https://radardatransparencia.atricon.org.br/"
+            href="https://labtcs.com.br/"
             target="_blank"
             rel="noopener noreferrer"
           >
