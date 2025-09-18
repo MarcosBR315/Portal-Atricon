@@ -31,7 +31,7 @@ export const Header = styled.header`
   width: 100%;
   height: 120px;
   padding: 0 20px;
-  background-color: #2FA3D9;
+  background-color: #2fa3d9;
   display: flex;
   align-items: center;
   justify-content: center; /* desktop: título central */
@@ -57,8 +57,13 @@ export const Header = styled.header`
   @media (max-width: 768px) {
     height: 100px;
 
-    h1 { font-size: 24px; }
-    .logoHorizontal { height: 60px; left: 10px; }
+    h1 {
+      font-size: 24px;
+    }
+    .logoHorizontal {
+      height: 60px;
+      left: 10px;
+    }
   }
 
   /* CORREÇÃO: max-width 600px (antes estava 'mix-width') */
@@ -91,11 +96,15 @@ export const Header = styled.header`
   @media (max-width: 480px) {
     height: 80px;
 
-    h1 { font-size: 20px; }
-    .logoHorizontal { height: 50px; left: 5px; }
+    h1 {
+      font-size: 20px;
+    }
+    .logoHorizontal {
+      height: 50px;
+      left: 5px;
+    }
   }
 `;
-
 
 export const Main = styled.main`
   width: 100%;
@@ -114,24 +123,7 @@ export const Main = styled.main`
     align-items: center;
     gap: 20px;
   }
-
-  a {
-    border-radius: 8px;
-    padding: 14px 35px;
-    width: fit-content;
-    background-color: #4f46e5;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-
-    &:hover {
-      background-color: #3730a3;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 8px rgba(0,0,0,0.15);
-    }
+}
   }
 
   @media (max-width: 768px) {
@@ -153,6 +145,18 @@ export const Main = styled.main`
   }
 `;
 
+export const A = styled.a`
+  background: none;
+  align-items: center;
+  display: flex;
+  border: 2px solid;
+  border-radius: 8px;
+
+  img {
+  width: 100px;
+  }
+`
+
 export const ButtonLink = styled(Link)`
   border-radius: 8px;
   margin-top: 20px;
@@ -165,12 +169,12 @@ export const ButtonLink = styled(Link)`
   text-align: center;
   display: block;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   &:hover {
     background-color: #3730a3;
     transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   }
 
   @media (max-width: 768px) {
