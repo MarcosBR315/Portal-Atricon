@@ -80,11 +80,9 @@ export const Header = styled.header`
     }
 
     .logoHorizontal {
-      position: static; /* participa do fluxo/flex */
+      position: static;
       height: 60px;
-      /* se precisar garantir que fique sempre à esquerda:
-         order: -1;
-      */
+
     }
   }
 
@@ -146,6 +144,7 @@ export const A = styled.a`
   border: 2px solid;
   border-radius: 8px;
   padding: 10px;
+  transition: all 0.3s ease;
 
   img {
     width: 150px;
