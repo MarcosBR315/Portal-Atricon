@@ -1,7 +1,7 @@
 import * as S from "../components/StyledComponents";
 import LogoBrancaHorizontal from "../components/images/logoBrancaHorizontal.png";
-import imgRdT from "../components/images/LogoRdT.png";
-import imgLabtcs from "../components/images/LogoLabtcs.png";
+import imgRdT from "../components/images/logoRdT.png";
+import imgLabtcs from "../components/images/logoLabtcs.png";
 
 export default function Projetos() {
   return (
