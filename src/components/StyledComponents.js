@@ -134,6 +134,7 @@ export const Main = styled.main`
       font-size: 0.9rem;
       padding: 10px 25px;
     }
+}
 `;
 
 export const A = styled.a`
