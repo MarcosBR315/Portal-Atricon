@@ -6,7 +6,7 @@ export default function SiteOficial() {
   return (
     <>
       <S.Header>
-        <img className="logoHorizontal" src={LogoBrancaHorizontal} />
+        <img alt="Logo da Atricon Horizontal" className="logoHorizontal" src={LogoBrancaHorizontal} />
         <h1>Portal Atricon</h1>
       </S.Header>
       <S.Main>
@@ -16,7 +16,7 @@ export default function SiteOficial() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={LogoReduzida}/>
+            <img alt="Logo da Atricon reduzida" src={LogoReduzida}/>
           </S.A>
           <S.ButtonLink to="/">Voltar</S.ButtonLink>
         </div>

@@ -7,7 +7,7 @@ export default function Eventos() {
   return (
     <>
       <S.Header>
-        <img className="logoHorizontal" src={LogoBrancaHorizontal} />
+        <img className="logoHorizontal" alt="Logo da Atricon" src={LogoBrancaHorizontal} />
         <h1>Portal Atricon</h1>
       </S.Header>
       <S.Main>
@@ -17,14 +17,14 @@ export default function Eventos() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={imgCITC} />
+            <img src={imgCITC} alt="Logo IV CITC"/>
           </S.A>
           <S.A
             href="https://catc.atricon.org.br"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={imgCATC} />
+            <img src={imgCATC} alt="Logo IV CATC"/>
           </S.A>
           <S.ButtonLink to="/">Voltar</S.ButtonLink>
         </div>

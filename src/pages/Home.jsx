@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <S.Header>
-        <img className="logoHorizontal" src={LogoHorizontal} />
+        <img className="logoHorizontal" alt="Logo da Atricon Horizontal" src={LogoHorizontal} />
         <h1>Portal Atricon</h1>
       </S.Header>
       <S.Main>
