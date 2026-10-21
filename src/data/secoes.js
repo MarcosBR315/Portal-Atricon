@@ -3,7 +3,7 @@ import imgCITC from "../components/images/logoCITC.png";
 import imgCATC from "../components/images/logoCATC.png";
 import imgRdT from "../components/images/logoRdT.png";
 import imgLabtcs from "../components/images/logoLabtcs.png";
-import logoReduzida from "../components/images/LogoReduzida.png";
+import logoReduzida from "../components/images/logoReduzida.png";
 
 export const secoes = {
   "site-oficial": [
