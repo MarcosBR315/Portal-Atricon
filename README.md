@@ -8,7 +8,7 @@ Portal que reúne, em um só lugar, o **site oficial**, os **eventos** e os **pr
 
 🔗 **Demo:** https://portal-atricon.vercel.app
 
-![Tela inicial do Portal Atricon](MarcosBR315/Portal-Atricon/public/telaInicial.png)
+![Tela inicial do Portal Atricon](/public/telaInicial.png)
 
 ## Tecnologias
 
