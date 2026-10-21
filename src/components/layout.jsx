@@ -1,13 +1,16 @@
-import * as S from "../components/StyledComponents";
-import LogoHorizontal from "../components/images/logoBrancaHorizontal.png";
+import { Outlet } from "react-router-dom";
+import * as S from "./StyledComponents";
+import logo from "./images/logoBrancaHorizontal.png";
 
-export default function Header() {
+export default function Layout() {
   return (
     <>
       <S.Header>
-        <img className="logoHorizontal" alt="Logo da Atricon Horizontal" src={LogoHorizontal} />
+        <img className="logoHorizontal" src={logo} alt="Atricon" />
         <h1>Portal Atricon</h1>
       </S.Header>
+      <Outlet />
+      <S.Footer>© {new Date().getFullYear()} Atricon</S.Footer>
     </>
   );
 }

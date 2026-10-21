@@ -25,6 +25,12 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     cursor: pointer;
   }
+  
+  /* Contorno para elementos focados (TAB) */
+  a:focus-visible {
+    outline: 3px solid #0e4670;
+    outline-offset: 1px;
+  }
 `;
 
 export const Header = styled.header`
@@ -116,25 +122,23 @@ export const Main = styled.main`
     align-items: center;
     gap: 20px;
   }
-  
 
   @media (max-width: 768px) {
     padding: 40px 15px;
-
-    a {
-      font-size: 1rem;
-      padding: 12px 30px;
-    }
   }
 
   @media (max-width: 480px) {
     padding: 30px 10px;
+  }
+`;
 
-    a {
-      font-size: 0.9rem;
-      padding: 10px 25px;
-    }
-}
+export const Footer = styled.footer`
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #e5e5e5;
 `;
 
 export const A = styled.a`
@@ -163,7 +167,7 @@ export const ButtonLink = styled(Link)`
   margin-top: 20px;
   padding: 14px 35px;
   width: fit-content;
-  background-color: #4f46e5;
+  background-color: #0e4670;
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
@@ -173,7 +177,7 @@ export const ButtonLink = styled(Link)`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   &:hover {
-    background-color: #3730a3;
+    background-color: #0a3353;
     transform: translateY(-2px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   }

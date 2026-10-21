@@ -1,12 +1,9 @@
-# React + Vite
+## Projeto para fins educativos!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O objetivo é criar um portal de fácil acesso e uso para facilitar o dia a dia de quem utiliza serviços da Associação dos Membros dos Tribunais de Contas do Brasil - Atricon.
 
-Currently, two official plugins are available:
+O portal unifica o *site oficial*, *eventos* e *projetos* da entidade em um só ambiente para facilitar a navegação dos utilizadores diários tanto no escritório quanto fora dele.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias utilizadas
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ReactJS

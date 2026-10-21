@@ -1,19 +1,20 @@
 import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
 import Home from "./pages/Home";
-import SiteOficial from "./pages/SiteOficial";
-import Projetos from "./pages/Projetos";
-import Eventos from "./pages/Eventos";
+import LinksPage from "./pages/LinksPage";
+import NotFound from "./pages/NotFound";
 import * as S from "./components/StyledComponents";
 
 function App() {
   return (
     <>
-      <S.GlobalStyle /> {/* Estilos globais aplicados */}
+      <S.GlobalStyle />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/site-oficial" element={<SiteOficial />} />
-        <Route path="/projetos" element={<Projetos />} />
-        <Route path="/eventos" element={<Eventos />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/:secao" element={<LinksPage />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
       </Routes>
     </>
   );
